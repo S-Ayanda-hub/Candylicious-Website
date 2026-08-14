@@ -428,10 +428,11 @@ Candylicious Website
     ├── Email
     ├── Social Media
     └── WhatsApp
+```
 
 ---
 
-## 8. Changelog
+## 10. Changelog
 
 This section will be updated throughout the development of the website to track changes, improvements and major updates.
 
@@ -444,7 +445,7 @@ This section will be updated throughout the development of the website to track 
 
 ---
 
-## 9. References
+## 11. References
 
 1. Candylicious. *Home*. Candylicious website. Available at: https://candylicious.co.za/home (Accessed: 12 August 2026).
 
@@ -459,3 +460,6 @@ This section will be updated throughout the development of the website to track 
 6. Sun International. *Time Square: Candylicious*. Available at: https://www.suninternational.com/time-square/restaurants/candylicious/ (Accessed: 12 August 2026).
 
 7. Evendo. *Candylicious Sun City Resort: A Sweet Escape*. Available at: https://evendo.com/locations/south-africa/pilanesberg-national-park/shop/candylicious-sun-city-resort (Accessed: 12 August 2026).
+---
+
+
