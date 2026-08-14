@@ -1,4 +1,4 @@
-# 🍭 CANDYLICIOUS
+#  CANDYLICIOUS
 ### "Treat Yourself"
 
 **Web Development (Introduction) - WEDE5020**
