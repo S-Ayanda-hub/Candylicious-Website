@@ -540,17 +540,13 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.map-placeholder {
+.map-area {
   min-height: 20rem;
   display: grid;
   place-items: center;
-  border: 3px dashed var(--lime);
-  border-radius: var(--radius);
-  background: #f0f8dc;
+  border: 0;
+  background: #fff3f8;
   color: var(--green-dark);
-  font-family: 'Baloo 2', Arial, sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
 }
 
 .contact-grid {
