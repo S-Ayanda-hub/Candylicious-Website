@@ -1,11 +1,11 @@
 body {
-    background-color: #a6d6f1;
+    background-color: #dadd12;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 
 h1 {
-    color: #c3e40d;
+    color: #dd1cb3;
 }
 
 p {
@@ -34,11 +34,11 @@ nav {
     display: flex;
     justify-content: center;
     gap: 30px;
-    background-color: #2e2d2d;
+    background-color: #fffefe;
     padding: 15px;
 }
 nav a {
-    color: rgb(245, 243, 160);
+    color: rgb(226, 5, 89);
     font-size: 20px;
 }
 
