@@ -1,34 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candylicious - Support</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Candylicious customer support and frequently asked questions.">
+    <title>Candylicious | Support</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-      <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="products.html">Product details</a></li>
-        <li><a href="contact.html">Contact us</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="location.html">Store Locations</a></li>
-    </nav>
-    <h1>Support</h1>
-    <h2>FAQ</h2>
-    <p>How long is delivery?</p>
-    <p>Delivery times vary depending on your location and the shipping method chosen. Please allow 3-5 business days for standard delivery.</p>
-    <br>
-    <p>Can I return products?</p>
-    <p>Yes, you can return products within 30 days of purchase, provided they are in their original condition and packaging.</p>
-    <br>
-    <p>Need Help?</p>
-    <textarea placeholder="Describe the issue you're experiencing..."></textarea>
-    <br>
-    <button>Submit</button>
-    <h2>Join Our Mailing List</h2>
-    <p>Email: info@candylicious.co.za </p>
+
+<body><a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="container header-inner"><a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="img/logo_with_name.jpg" alt="Candylicious logo">
+                </span>
+                
+            </a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Shop</a></li>
+                    <li><a href="products.html">Product Details</a></li>
+                    <li><a href="location.html">Store Locations</a></li>
+                    <li><a class="active" href="support.html">Support</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1>Support</h1>
+                <p>Find answers to common questions or send us a request.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container faq-list">
+                <div class="section-heading">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Helpful information for Candylicious customers.</p>
+                </div>
+                <details open>
+                    <summary>How long is delivery?</summary>
+                    <p>Delivery times vary depending on your location and shipping method. Confirm the final delivery
+                        policy before publishing.</p>
+                </details>
+                <details>
+                    <summary>Can I return products?</summary>
+                    <p>Returns depend on the product condition and the final store policy. Keep products in their
+                        original condition and packaging while the policy is confirmed.</p>
+                </details>
+                <details>
+                    <summary>How can I find a store?</summary>
+                    <p>Visit the <a href="location.html">Store Locations</a> page for addresses and directions.</p>
+                </details>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <form class="form-card" action="#" method="post">
+                    <h2>Need Help?</h2><label for="support-email">Email</label><input id="support-email" name="email"
+                        type="email" required><label for="issue">Describe the issue</label><textarea id="issue"
+                        name="issue" placeholder="Describe the issue you are experiencing..."
+                        required></textarea><button class="btn" type="submit">Submit Request</button>
+                </form>
+                <div class="newsletter">
+                    <h2>Join Our Mailing List</h2>
+                    <p>Get updates about new products and promotions.</p>
+                    <form class="newsletter-form" action="#" method="post"><label for="mailing-email">Email
+                            address</label><input id="mailing-email" name="email" type="email"
+                            placeholder="Enter your email" required><button class="btn btn-secondary"
+                            type="submit">Subscribe</button></form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Candylicious</h2>
+                <p>Treat Yourself to a world of sweets.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Shop</a></li>
+                    <li><a href="location.html">Locations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>info@candylicious.co.za</p>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2026 Candylicious. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

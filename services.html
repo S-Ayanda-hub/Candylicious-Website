@@ -1,46 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candylicious - Services</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Shop Candylicious chocolates, sweets, novelties and merchandise.">
+    <title>Candylicious | Shop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-      <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="products.html">Product details</a></li>
-        <li><a href="contact.html">Contact us</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="location.html">Store Locations</a></li>
-    </nav>
-    <h1>Shop</h1>
 
-    <h2>Chocolates</h2>
-    <img src="img/toble-20g.webp" width="120">
-    <p>Milk Chocolate</p> 
-    <p>Price: R29</p>
-    <p>Available: Yes</p>
-
-    <h2>Sweets</h2>
-    <img src="img/jelly-belly-20-assorted.webp" width="120">
-    <p>Jelly Belly Assorted</p> 
-    <p>Price: R99</p>
-    <p>Available: Yes</p>
-
-    <h2>Novelties</h2>
-    <img src="img/slime-lickers.webp" width="120">
-    <p>Slime Lickers</p>
-    <p>Price: R69</p>
-    <p>Available: Yes</p>
-
-    <h2>Merchandise</h2>
-    <img src="img/odd-sox-mens-crew-oreo-cookies-.webp" width="120">
-    <p>ODD Sox | Oreo Cookies</p>
-    <p>Price: R299</p>
-    <p>Available: Yes</p>
-
+<body><a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="container header-inner"><a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="img/logo_with_name.jpg" alt="Candylicious logo">
+                </span>
+            </a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a class="active" href="services.html">Shop</a></li>
+                    <li><a href="products.html">Product Details</a></li>
+                    <li><a href="location.html">Store Locations</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1>Shop Our Treats</h1>
+                <p>Browse chocolates, sweets, novelties and merchandise.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container shop-layout">
+                <aside class="filters">
+                    <h2>Filters</h2>
+                    <fieldset>
+                        <legend>Category</legend><label><input type="checkbox"> Chocolates</label><label><input
+                                type="checkbox"> Sweets</label><label><input type="checkbox">
+                            Novelties</label><label><input type="checkbox"> Merchandise</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Price</legend><label><input type="checkbox"> Under R50</label><label><input
+                                type="checkbox"> R50 - R100</label><label><input type="checkbox"> Over R100</label>
+                    </fieldset>
+                </aside>
+                <div>
+                    <div class="results-bar">
+                        <p>Featured products</p><label for="sort">Sort by <select id="sort">
+                                <option>Popular</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                            </select></label>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card" id="chocolates"><img src="img/toble-20g.webp"
+                                alt="Toblerone milk chocolate bar">
+                            <h3>Toblerone Milk Chocolate</h3>
+                            <p>Milk chocolate treat.</p>
+                            <p class="price">R29</p><a class="btn" href="products.html">View Details</a>
+                        </article>
+                        <article class="product-card" id="sweets"><img src="img/jelly-belly-20-assorted.webp"
+                                alt="Jelly Belly assorted sweets">
+                            <h3>Jelly Belly Assorted</h3>
+                            <p>A colourful selection of sweets.</p>
+                            <p class="price">R99</p><a class="btn" href="products.html">View Details</a>
+                        </article>
+                        <article class="product-card" id="novelties"><img src="img/slime-lickers.webp"
+                                alt="Slime Lickers novelty sweet">
+                            <h3>Slime Lickers</h3>
+                            <p>A fun novelty sweet.</p>
+                            <p class="price">R69</p><a class="btn" href="products.html">View Details</a>
+                        </article>
+                        <article class="product-card" id="merchandise"><img
+                                src="img/odd-sox-mens-crew-oreo-cookies-.webp" alt="ODD Sox Oreo Cookies merchandise">
+                            <h3>ODD Sox Oreo Cookies</h3>
+                            <p>Fun novelty merchandise.</p>
+                            <p class="price">R299</p><a class="btn" href="products.html">View Details</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Candylicious</h2>
+                <p>Treat Yourself to a world of sweets.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="location.html">Locations</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>info@candylicious.co.za</p>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2026 Candylicious. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
