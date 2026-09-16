@@ -13,8 +13,8 @@
 | **Student Number** | ST10535627 |
 | **Organisation** | Candylicious Retail (Pty) Ltd |
 | **Module** | WEDE5020 - Web Development (Introduction) |
-| **Project Version** | 1.0 |
-| **Status** | Draft / Part 1 |
+| **Project Version** | 2.0 |
+| **Status** | Draft / Part 2 |
 
 ---
 
@@ -388,7 +388,10 @@ The final website will be responsive across mobile, tablet and desktop devices.
 
 ---
 
-## 9. Sitemap
+## 9. Part 2 Details
+will add screen shots later
+
+## 10. Sitemap
 
 ```text
 Candylicious Website
@@ -432,19 +435,6 @@ Candylicious Website
     ├── Social Media
     └── WhatsApp
 ```
-
----
-
-## 10. Changelog
-
-This section will be updated throughout the development of the website to track changes, improvements and major updates.
-
-| Version | Date | Changes |
-|---|---|---|
-| **1.0** | 14 August 2026 | Initial project documentation and README created. |
-| **1.1** | _To be updated_ | _Future changes and improvements will be recorded here._ |
-| **1.2** | _To be updated_ | _Future changes and improvements will be recorded here._ |
-| **2.0** | _To be updated_ | _Future project updates will be recorded here._ |
 
 ---
 
