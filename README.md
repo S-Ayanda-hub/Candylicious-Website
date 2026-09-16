@@ -265,10 +265,13 @@ The Candylicious brand identity will be reinforced through:
 
 | Colour | Hex Code | Purpose |
 |---|---|---|
-| Floral White | `#FFF8F0` | Background |
-| Rose Punch | `#D63384` | Primary accents |
-| Amber Gold | `#FFC107` | Small accents |
-| Ocean Mist | `#00BEA5` | Headings and text |
+|  Cream | #FFF8F0 | Background |
+| Raspberry | #D63384 | Primary accents |
+| Dark raspberry | #AD1457 | accent |
+| Yellow | #FFC107 | Small accents |
+| Lime green  | #84C801 | accent |
+| Dark green | #315B2C | text/background |
+
 
 ### 6.3 Typography
 
