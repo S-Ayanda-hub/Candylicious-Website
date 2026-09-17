@@ -389,7 +389,20 @@ The final website will be responsive across mobile, tablet and desktop devices.
 ---
 
 ## 9. Part 2 Details
-will add screen shots later
+Part 2 focuses on designing the visuals: CSS styling and responsive design.
+
+### 9.1 Desktop - Website view
+
+<img width="1346" height="631" alt="image" src="https://github.com/user-attachments/assets/c565e065-9202-4613-a378-a8639362de9f" />
+
+### 9.2 Tablet - Website view
+
+<img width="361" height="537" alt="image" src="https://github.com/user-attachments/assets/a697ebda-91ff-48fb-aa81-11f75fcc0318" />
+
+### 9.3 Mobile - Website view
+
+<img width="246" height="539" alt="image" src="https://github.com/user-attachments/assets/f6acba73-8ab2-4714-9d37-844fe673b9e7" />
+
 
 ## 10. Sitemap
 
