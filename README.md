@@ -468,4 +468,4 @@ Candylicious Website
 7. Evendo. *Candylicious Sun City Resort: A Sweet Escape*. Available at: https://evendo.com/locations/south-africa/pilanesberg-national-park/shop/candylicious-sun-city-resort (Accessed: 12 August 2026).
 ---
 
-
+#add changelogs PLEASE
