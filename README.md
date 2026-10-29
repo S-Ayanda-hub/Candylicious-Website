@@ -14,7 +14,7 @@
 | **Organisation** | Candylicious Retail (Pty) Ltd |
 | **Module** | WEDE5020 - Web Development (Introduction) |
 | **Project Version** | 2.0 |
-| **Status** | Draft / Part 2 |
+| **Status** | Part 3 - Functionality and SEO  |
 
 ---
 
@@ -403,8 +403,26 @@ Part 2 focuses on designing the visuals: CSS styling and responsive design.
 
 <img width="246" height="539" alt="image" src="https://github.com/user-attachments/assets/f6acba73-8ab2-4714-9d37-844fe673b9e7" />
 
+---
 
-## 10. Sitemap
+## 10. Changelog
+
+| Version | Date | Changes |
+|---|---|---|
+| 1.0 | 14 August 2026 | Initial project documentation and README created. |
+| 1.1 | 29 October 2026 | Part 3 changes: rebuilt services page with 23 real products from the Candylicious SweetieShop catalogue grouped into four categories; implemented working category and price filters, price sorting and a live results counter with JavaScript; added a dynamic product detail page driven by a JavaScript product database and URL parameters, so every product link shows its own name, price, image and description; implemented an Add to Cart shopping cart stored in localStorage with a cart badge and toast notifications; added a new Enquiry page with a validated enquiry form (cost, availability, sponsorship) with ARIA error messages and client-side validation; rebuilt the contact page form with validation attributes, labels and ARIA error handling; updated the support page form with the same validation; embedded a Google Map of the head office on the location page and store direction links for all nine stores; fixed broken HTML tags on the location page; added robots.txt and sitemap.xml for SEO; updated meta descriptions and titles on all pages. |
+
+---
+
+## 11. Technical
+
+- HTML5, CSS3 (Flexbox and Grid), JavaScript
+- Responsive layout with mobile breakpoints
+- Client-side form validation with ARIA error messages
+- Shopping cart stored in localStorage
+- robots.txt and sitemap.xml for search engine crawling
+
+## 12. Sitemap
 
 ```text
 Candylicious Website
@@ -451,7 +469,7 @@ Candylicious Website
 
 ---
 
-## 11. References
+## 13. References
 
 1. Candylicious. *Home*. Candylicious website. Available at: https://candylicious.co.za/home (Accessed: 12 August 2026).
 
@@ -468,4 +486,4 @@ Candylicious Website
 7. Evendo. *Candylicious Sun City Resort: A Sweet Escape*. Available at: https://evendo.com/locations/south-africa/pilanesberg-national-park/shop/candylicious-sun-city-resort (Accessed: 12 August 2026).
 ---
 
-#add changelogs PLEASE
+
