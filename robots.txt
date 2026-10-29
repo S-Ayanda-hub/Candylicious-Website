@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /js/
+Sitemap: https://example-candylicious.netlify.app/sitemap.xml
