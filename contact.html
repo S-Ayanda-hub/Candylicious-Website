@@ -24,6 +24,7 @@
                     <li><a href="products.html">Product Details</a></li>
                     <li><a href="location.html">Store Locations</a></li>
                     <li><a href="support.html">Support</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                     <li><a class="active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -54,16 +55,54 @@
                         <li><a class="btn btn-outline" href="https://www.tiktok.com/@candylicious.sa" target="_blank"
                                 rel="noopener">TikTok</a></li>
                     </ul>
+                    <div class="newsletter">
+                        <h2>Join Our Mailing List</h2>
+                        <form class="newsletter-form" action="#" method="post">
+                            <label for="news-email">Email address</label>
+                            <input id="news-email" type="email" name="email" placeholder="Enter your email" required>
+                            <button class="btn btn-secondary" type="submit">Subscribe</button>
+                        </form>
+                    </div>
                 </section>
-                <form class="form-card" action="#" method="post">
-                    <h2>Send a Message</h2><label for="name">Name</label><input id="name" name="name" type="text"
-                        required><label for="email">Email</label><input id="email" name="email" type="email"
-                        required><label for="message">Message</label><textarea id="message" name="message"
-                        required></textarea><button class="btn" type="submit">Send Message</button>
+
+                <form class="form-card" id="contact-form" action="submit-contact" method="post" novalidate>
+                    <h2>Send a General Message</h2>
+                    <p>All fields marked with * are required.</p>
+
+                    <label for="ct-name">Name *</label>
+                    <input id="ct-name" name="name" type="text" required minlength="2" aria-describedby="err-ct-name">
+                    <p class="form-error" id="err-ct-name" role="alert" aria-live="polite"></p>
+
+                    <label for="ct-email">Email *</label>
+                    <input id="ct-email" name="email" type="email" required aria-describedby="err-ct-email">
+                    <p class="form-error" id="err-ct-email" role="alert" aria-live="polite"></p>
+
+                    <label for="ct-subject">Subject *</label>
+                    <input id="ct-subject" name="subject" type="text" required aria-describedby="err-ct-subject">
+                    <p class="form-error" id="err-ct-subject" role="alert" aria-live="polite"></p>
+
+                    <label for="ct-message">Message *</label>
+                    <textarea id="ct-message" name="message" rows="6" required minlength="20"
+                        aria-describedby="err-ct-message"></textarea>
+                    <p class="form-error" id="err-ct-message" role="alert" aria-live="polite"></p>
+
+                    <button class="btn" type="submit">Send Message</button>
+                    <p class="form-success" id="ct-success" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
-        
+
+        <section class="section">
+            <div class="container">
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.1009078679335!2d28.120072016551166!3d-26.015536764441563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956dfbf1c0c0ad%3A0x8d8b9ae873b9fa91!2s1%20Barlow%20Rd%2C%20Halfway%20House%2C%20Johannesburg%2C%201685!5e1!3m2!1sen!2sza!4v1793296303634!5m2!1sen!2sza"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer class="site-footer">
         <div class="container footer-grid">

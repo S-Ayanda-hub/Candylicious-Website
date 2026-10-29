@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit a product cost, availability or sponsorship enquiry to Candylicious.">
+    <title>Candylicious | Enquiry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark"><img src="img/logo_with_name.jpg" alt="Candylicious logo"></span>
+            </a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Shop</a></li>
+                    <li><a href="products.html">Product Details</a></li>
+                    <li><a href="location.html">Store Locations</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a class="active" href="enquiry.html" >Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1>Product &amp; Sponsorship Enquiry</h1>
+                <p>Ask us about product availability, bulk orders or sponsorship opportunities.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <form class="form-card" id="enquiry-form" action="submit-enquiry" method="post" novalidate>
+                    <h2>Enquire Now</h2>
+                    <p>All fields marked with * are required.</p>
+
+                    <label for="enq-name">Full name *</label>
+                    <input id="enq-name" name="name" type="text" required minlength="2" aria-describedby="err-name">
+                    <p class="form-error" id="err-name" role="alert" aria-live="polite"></p>
+
+                    <label for="enq-email">Email address *</label>
+                    <input id="enq-email" name="email" type="email" required aria-describedby="err-email">
+                    <p class="form-error" id="err-email" role="alert" aria-live="polite"></p>
+
+                    <label for="enq-phone">Contact number *</label>
+                    <input id="enq-phone" name="phone" type="tel" required pattern="[0-9+ ]{9,15}"
+                        placeholder="011 262 5122" aria-describedby="err-phone">
+                    <p class="form-error" id="err-phone" role="alert" aria-live="polite"></p>
+
+                    <label for="enq-type">Enquiry type *</label>
+                    <select id="enq-type" name="type" required aria-describedby="err-type">
+                        <option value="">Please choose an option</option>
+                        <option value="cost">Product cost enquiry</option>
+                        <option value="availability">Product availability enquiry</option>
+                        <option value="sponsorship">Sponsorship or donation request</option>
+                    </select>
+                    <p class="form-error" id="err-type" role="alert" aria-live="polite"></p>
+
+                    <label for="enq-message">Your message *</label>
+                    <textarea id="enq-message" name="message" rows="6" required minlength="20"
+                        aria-describedby="err-message"></textarea>
+                    <p class="form-error" id="err-message" role="alert" aria-live="polite"></p>
+
+                    <button class="btn" type="submit">Submit Enquiry</button>
+                    <p class="form-success" id="enq-success" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Candylicious</h2>
+                <p>Treat Yourself to a world of sweets.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Shop</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>1 Barlow Road, Halfway House, Midrand, Johannesburg</p>
+                <p>info@candylicious.co.za</p>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2026 Candylicious. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

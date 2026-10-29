@@ -24,6 +24,7 @@
                     <li><a href="products.html">Product Details</a></li>
                     <li><a href="location.html">Store Locations</a></li>
                     <li><a href="support.html">Support</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -40,54 +41,266 @@
             <div class="container shop-layout">
                 <aside class="filters">
                     <h2>Filters</h2>
-                    <fieldset>
-                        <legend>Category</legend><label><input type="checkbox"> Chocolates</label><label><input
-                                type="checkbox"> Sweets</label><label><input type="checkbox">
-                            Novelties</label><label><input type="checkbox"> Merchandise</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Price</legend><label><input type="checkbox"> Under R50</label><label><input
-                                type="checkbox"> R50 - R100</label><label><input type="checkbox"> Over R100</label>
-                    </fieldset>
+                    <form id="filter-form">
+                        <fieldset>
+                            <legend>Category</legend>
+                            <label><input type="checkbox" name="category" value="chocolates"> Chocolates</label>
+                            <label><input type="checkbox" name="category" value="sweets"> Sweets</label>
+                            <label><input type="checkbox" name="category" value="novelties"> Novelties</label>
+                            <label><input type="checkbox" name="category" value="merchandise"> Merchandise</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Price</legend>
+                            <label><input type="checkbox" name="price" value="0-50"> Under R50</label>
+                            <label><input type="checkbox" name="price" value="50-100"> R50 - R100</label>
+                            <label><input type="checkbox" name="price" value="100+"> Over R100</label>
+                        </fieldset>
+                        <button type="button" id="clear-filters" class="btn btn-secondary">Clear Filters</button>
+                    </form>
                 </aside>
+
                 <div>
                     <div class="results-bar">
-                        <p>Featured products</p><label for="sort">Sort by <select id="sort">
-                                <option>Popular</option>
-                                <option>Price: Low to High</option>
-                                <option>Price: High to Low</option>
-                            </select></label>
+                        <p id="results-count" aria-live="polite">Showing 23 products</p>
+                        <label for="sort">Sort by
+                            <select id="sort">
+                                <option value="default">Default order</option>
+                                <option value="low">Price: Low to High</option>
+                                <option value="high">Price: High to Low</option>
+                            </select>
+                        </label>
                     </div>
-                    <div class="product-grid">
-                        <article class="product-card" id="chocolates"><img src="img/toble-20g.webp"
-                                alt="Toblerone milk chocolate bar">
-                            <h3>Toblerone Milk Chocolate</h3>
-                            <p>Milk chocolate treat.</p>
-                            <p class="price">R29</p><a class="btn" href="products.html">View Details</a>
-                        </article>
-                        <article class="product-card" id="sweets"><img src="img/jelly-belly-20-assorted.webp"
-                                alt="Jelly Belly assorted sweets">
-                            <h3>Jelly Belly Assorted</h3>
-                            <p>A colourful selection of sweets.</p>
-                            <p class="price">R99</p><a class="btn" href="products.html">View Details</a>
-                        </article>
-                        <article class="product-card" id="novelties"><img src="img/slime-lickers.webp"
-                                alt="Slime Lickers novelty sweet">
-                            <h3>Slime Lickers</h3>
-                            <p>A fun novelty sweet.</p>
-                            <p class="price">R69</p><a class="btn" href="products.html">View Details</a>
-                        </article>
-                        <article class="product-card" id="merchandise"><img
-                                src="img/odd-sox-mens-crew-oreo-cookies-.webp" alt="ODD Sox Oreo Cookies merchandise">
-                            <h3>ODD Sox Oreo Cookies</h3>
-                            <p>Fun novelty merchandise.</p>
-                            <p class="price">R299</p><a class="btn" href="products.html">View Details</a>
-                        </article>
-                    </div>
+
+                    <section class="category-section" id="chocolates">
+                        <h2>Chocolates</h2>
+                        <div class="product-grid">
+                            <article class="product-card" data-name="Toblerone Milk Chocolate 20g" data-price="29"
+                                data-category="chocolates">
+                                <img src="img/toble-20g.webp" alt="Toblerone milk chocolate bar" loading="lazy">
+                                <h3>Toblerone Milk Chocolate 20g</h3>
+                                <p class="price">R29</p>
+                                <a class="btn product-link" href="products.html?product=toblerone">View Details</a>
+                            </article>
+                            <article class="product-card" data-name="M&amp;M's Honey Roasted Nut 49g" data-price="59"
+                                data-category="chocolates">
+                                <img src="img/mms-honey-roasted-nut.webp" alt="M&amp;M's Honey Roasted Nut bag"
+                                    loading="lazy">
+                                <h3>M&amp;M's Honey Roasted Nut 49g</h3>
+                                <p class="price">R59</p>
+                                <a class="btn product-link" href="products.html?product=mms-honey-roasted-nut">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Reese's Big Cup with Marshmallow 39g"
+                                data-price="69" data-category="chocolates">
+                                <img src="img/reeses-big-cup-marshmallow.webp" alt="Reese's Big Cup with Marshmallow"
+                                    loading="lazy">
+                                <h3>Reese's Big Cup with Marshmallow 39g</h3>
+                                <p class="price">R69</p>
+                                <a class="btn product-link" href="products.html?product=reeses-big-cup-marshmallow">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Hershey's Choco Tubes Almond 21g" data-price="15"
+                                data-category="chocolates">
+                                <img src="img/hersheys-choco-tubes-almond.webp" alt="Hershey's Choco Tubes Almond"
+                                    loading="lazy">
+                                <h3>Hershey's Choco Tubes Almond 21g</h3>
+                                <p class="price">R15</p>
+                                <a class="btn product-link"
+                                    href="products.html?product=hersheys-choco-tubes-almond">View Details</a>
+                            </article>
+                            <article class="product-card" data-name="It's a BOOM Dubai Chocolate Bar 45g"
+                                data-price="45" data-category="chocolates">
+                                <img src="img/boom-dubai-chocolate-bar.webp" alt="It's a BOOM Dubai chocolate bar"
+                                    loading="lazy">
+                                <h3>It's a BOOM Dubai Chocolate Bar 45g</h3>
+                                <p class="price">R45</p>
+                                <a class="btn product-link" href="products.html?product=boom-dubai-chocolate-bar">View
+                                    Details</a>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="category-section" id="sweets">
+                        <h2>Sweets</h2>
+                        <div class="product-grid">
+                            <article class="product-card" data-name="Jelly Belly Assorted" data-price="99"
+                                data-category="sweets">
+                                <img src="img/jelly-belly-20-assorted.webp" alt="Jelly Belly assorted sweets"
+                                    loading="lazy">
+                                <h3>Jelly Belly Assorted</h3>
+                                <p class="price">R99</p>
+                                <a class="btn product-link" href="products.html?product=jelly-belly">View Details</a>
+                            </article>
+                            <article class="product-card" data-name="NERDS Gummy Clusters Juiced 127g" data-price="119"
+                                data-category="sweets">
+                                <img src="img/nerds-gummy-clusters-juiced.webp" alt="NERDS Gummy Clusters Juiced"
+                                    loading="lazy">
+                                <h3>NERDS Gummy Clusters Juiced 127g</h3>
+                                <p class="price">R119</p>
+                                <a class="btn product-link"
+                                    href="products.html?product=nerds-gummy-clusters-juiced">View Details</a>
+                            </article>
+                            <article class="product-card" data-name="NERDS Gummy Clusters Very Berry 85g"
+                                data-price="89" data-category="sweets">
+                                <img src="img/nerds-gummy-clusters-very-berry.webp"
+                                    alt="NERDS Gummy Clusters Very Berry" loading="lazy">
+                                <h3>NERDS Gummy Clusters Very Berry 85g</h3>
+                                <p class="price">R89</p>
+                                <a class="btn product-link"
+                                    href="products.html?product=nerds-gummy-clusters-very-berry">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Mike and Ike Sour Blue Raspberry 22g"
+                                data-price="15" data-category="sweets">
+                                <img src="img/mike-and-ike-sour-blue-raspberry.webp"
+                                    alt="Mike and Ike Sour Blue Raspberry" loading="lazy">
+                                <h3>Mike and Ike Sour Blue Raspberry 22g</h3>
+                                <p class="price">R15</p>
+                                <a class="btn product-link"
+                                    href="products.html?product=mike-and-ike-sour-blue-raspberry">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="SOUR JACKS Watermelon 142g" data-price="99"
+                                data-category="sweets">
+                                <img src="img/sour-jacks-watermelon.webp" alt="SOUR JACKS Watermelon sweets"
+                                    loading="lazy">
+                                <h3>SOUR JACKS Watermelon 142g</h3>
+                                <p class="price">R99</p>
+                                <a class="btn product-link" href="products.html?product=sour-jacks-watermelon">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Pandy Winegums 50g" data-price="59"
+                                data-category="sweets">
+                                <img src="img/pandy-winegums.webp" alt="Pandy Winegums sweets" loading="lazy">
+                                <h3>Pandy Winegums 50g</h3>
+                                <p class="price">R59</p>
+                                <a class="btn product-link" href="products.html?product=pandy-winegums">View Details</a>
+                            </article>
+                            <article class="product-card" data-name="Laffy Taffy Strawberry 42g" data-price="49"
+                                data-category="sweets">
+                                <img src="img/laffy-taffy-strawberry.webp" alt="Laffy Taffy strawberry chew"
+                                    loading="lazy">
+                                <h3>Laffy Taffy Stretchy &amp; Tangy Strawberry 42g</h3>
+                                <p class="price">R49</p>
+                                <a class="btn product-link" href="products.html?product=laffy-taffy-strawberry">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Enchilokas Watermelon 150g" data-price="79"
+                                data-category="sweets">
+                                <img src="img/enchilokas-watermelon.webp" alt="Enchilokas watermelon chilli gummies"
+                                    loading="lazy">
+                                <h3>Enchilokas Watermelon (Chilli Gummies) 150g</h3>
+                                <p class="price">R79</p>
+                                <a class="btn product-link" href="products.html?product=enchilokas-watermelon">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Rice Krispies Treat Original 37g" data-price="45"
+                                data-category="sweets">
+                                <img src="img/rice-krispies-treat-original.webp" alt="Rice Krispies Treat original"
+                                    loading="lazy">
+                                <h3>Rice Krispies Treat Original 37g</h3>
+                                <p class="price">R45</p>
+                                <a class="btn product-link"
+                                    href="products.html?product=rice-krispies-treat-original">View Details</a>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="category-section" id="novelties">
+                        <h2>Novelties</h2>
+                        <div class="product-grid">
+                            <article class="product-card" data-name="Toxic Waste Slime Lickers 2.0" data-price="69"
+                                data-category="novelties">
+                                <img src="img/slime-lickers.webp" alt="Toxic Waste Slime Licker" loading="lazy">
+                                <h3>Toxic Waste Slime Lickers 2.0</h3>
+                                <p class="price">R69</p>
+                                <a class="btn product-link" href="products.html?product=slime-lickers">View Details</a>
+                            </article>
+                            <article class="product-card" data-name="JOJO Giant Funday Dog 90g" data-price="69"
+                                data-category="novelties">
+                                <img src="img/jojo-giant-funday-dog.webp" alt="JOJO Giant Funday Dog candy"
+                                    loading="lazy">
+                                <h3>JOJO Giant Funday Dog 90g</h3>
+                                <p class="price">R69</p>
+                                <a class="btn product-link" href="products.html?product=jojo-giant-funday-dog">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Hubba Bubba Max Sour Blue Raspberry"
+                                data-price="45" data-category="novelties">
+                                <img src="img/hubba-bubba-max-blue-raspberry.webp"
+                                    alt="Hubba Bubba Max Sour Blue Raspberry gum" loading="lazy">
+                                <h3>Hubba Bubba Max Sour Blue Raspberry</h3>
+                                <p class="price">R45</p>
+                                <a class="btn product-link"
+                                    href="products.html?product=hubba-bubba-max-blue-raspberry">View Details</a>
+                            </article>
+                            <article class="product-card" data-name="JOJO Hammer Candy Gum Watermelon 40g"
+                                data-price="8" data-category="novelties">
+                                <img src="img/jojo-hammer-candy-gum-watermelon.webp"
+                                    alt="JOJO Hammer Candy Gum Watermelon" loading="lazy">
+                                <h3>JOJO Hammer Candy Gum Watermelon 40g</h3>
+                                <p class="price">R8</p>
+                                <a class="btn product-link"
+                                    href="products.html?product=jojo-hammer-candy-gum-watermelon">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Kids Mania Sweet Soaker" data-price="55"
+                                data-category="novelties">
+                                <img src="img/kids-mania-sweet-soaker.webp" alt="Kids Mania Sweet Soaker candy spray"
+                                    loading="lazy">
+                                <h3>Kids Mania Sweet Soaker</h3>
+                                <p class="price">R55</p>
+                                <a class="btn product-link" href="products.html?product=kids-mania-sweet-soaker">View
+                                    Details</a>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="category-section" id="merchandise">
+                        <h2>Merchandise</h2>
+                        <div class="product-grid">
+                            <article class="product-card" data-name="ODD Sox Oreo Cookies" data-price="299"
+                                data-category="merchandise">
+                                <img src="img/odd-sox-mens-crew-oreo-cookies-.webp" alt="ODD Sox Oreo Cookies socks"
+                                    loading="lazy">
+                                <h3>ODD Sox Oreo Cookies</h3>
+                                <p class="price">R299</p>
+                                <a class="btn product-link" href="products.html?product=odd-sox-oreo">View Details</a>
+                            </article>
+                            <article class="product-card" data-name="ODD Boxers Airheads Flavors" data-price="399"
+                                data-category="merchandise">
+                                <img src="img/odd-boxers-airheads.webp" alt="ODD Boxers Airheads Flavors"
+                                    loading="lazy">
+                                <h3>ODD Boxers Airheads Flavors</h3>
+                                <p class="price">R399</p>
+                                <a class="btn product-link" href="products.html?product=odd-boxers-airheads">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Coca-Cola Travel Bag (Red)" data-price="699"
+                                data-category="merchandise">
+                                <img src="img/coca-cola-travel-bag-red.webp" alt="Coca-Cola travel bag in red"
+                                    loading="lazy">
+                                <h3>Coca-Cola Travel Bag (Red)</h3>
+                                <p class="price">R699</p>
+                                <a class="btn product-link" href="products.html?product=coca-cola-travel-bag-red">View
+                                    Details</a>
+                            </article>
+                            <article class="product-card" data-name="Toxic Waste Giant Money Bank 168g" data-price="399"
+                                data-category="merchandise">
+                                <img src="img/toxic-waste-giant-money-bank.webp" alt="Toxic Waste giant money bank"
+                                    loading="lazy">
+                                <h3>Toxic Waste Giant Money Bank 168g</h3>
+                                <p class="price">R399</p>
+                                <a class="btn product-link"
+                                    href="products.html?product=toxic-waste-giant-money-bank">View Details</a>
+                            </article>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
@@ -102,7 +315,7 @@
                     <li><a href="support.html">Support</a></li>
                 </ul>
             </div>
-           <div>
+            <div>
                 <h3>Contact</h3>
                 <p>1 Barlow Road, Halfway House, Midrand, Johannesburg</p>
                 <p>info@candylicious.co.za</p>
